@@ -30,7 +30,7 @@ The workflow is simple: first, students and books are added, then a book can be 
 
 ---
 ## 📂 Project Folder Structure
-
+```bash
 src/
 ├── main/
 │   ├── java/
