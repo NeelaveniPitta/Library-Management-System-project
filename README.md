@@ -31,3 +31,59 @@ The workflow is simple: first, students and books are added, then a book can be 
 ---
 
 ## 📂 Project Structure
+
+┣ 📂 src
+┃ ┣ 📂 main
+┃ ┃ ┣ 📂 java
+┃ ┃ ┃ ┗ 📂 com.library
+┃ ┃ ┃ ┃ ┣ 📂 controller
+┃ ┃ ┃ ┃ ┃ ┗ StudentController.java
+┃ ┃ ┃ ┃ ┃ ┗ BookController.java
+┃ ┃ ┃ ┃ ┃ ┗ IssueController.java
+┃ ┃ ┃ ┃ ┣ 📂 entity
+┃ ┃ ┃ ┃ ┃ ┗ Student.java
+┃ ┃ ┃ ┃ ┃ ┗ Book.java
+┃ ┃ ┃ ┃ ┃ ┗ Issue.java
+┃ ┃ ┃ ┃ ┣ 📂 repository
+┃ ┃ ┃ ┃ ┃ ┗ StudentRepository.java
+┃ ┃ ┃ ┃ ┃ ┗ BookRepository.java
+┃ ┃ ┃ ┃ ┃ ┗ IssueRepository.java
+┃ ┃ ┃ ┃ ┣ 📂 service
+┃ ┃ ┃ ┃ ┃ ┗ StudentService.java
+┃ ┃ ┃ ┃ ┃ ┗ BookService.java
+┃ ┃ ┃ ┃ ┃ ┗ IssueService.java
+┃ ┃ ┃ ┃ ┗ LibraryManagementSystemApplication.java
+┃ ┃ ┣ 📂 resources
+┃ ┃ ┃ ┣ 📂 static
+┃ ┃ ┃ ┃ ┣ 📂 css
+┃ ┃ ┃ ┃ ┣ 📂 js
+┃ ┃ ┃ ┣ 📂 templates
+┃ ┃ ┃ ┃ ┣ add-student.html
+┃ ┃ ┃ ┃ ┣ books.html
+┃ ┃ ┃ ┃ ┣ issue-book.html
+┃ ┃ ┃ ┃ ┣ return-book.html
+┃ ┃ ┃ ┣ application.properties
+┃ ┣ 📂 test
+┃ ┃ ┗ (JUnit test classes)
+┣ 📜 pom.xml
+┗ 📜 README.md
+
+
+
+
+---
+
+## 🚀 Getting Started
+### For Library Management System
+1. Clone the project.  
+2. Import into your IDE as a **Spring Boot project**.  
+3. Configure `application.properties` with **MySQL/Oracle database**.  
+4. Run the project using:  
+   ```bash
+   mvn spring-boot:run
+
+---
+## 👤 Author  
+Pitta Neelaveni  
+Java Developer | Spring Boot & Full Stack Web Application Enthusiast  
+
