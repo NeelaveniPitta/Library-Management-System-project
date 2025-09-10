@@ -29,44 +29,32 @@ The workflow is simple: first, students and books are added, then a book can be 
 - Suitable as **portfolio projects** for Java developers.  
 
 ---
+## 📂 Project Folder Structure
 
-## 📂 Project Structure
+src/
+├── main/
+│   ├── java/
+│   │   └── com/
+│   │       └── neelu/
+│   │           ├── controller/                 # Spring MVC Controllers (AuthorController.java)
+│   │           ├── entity/                     # JPA Entity classes (Author.java)
+│   │           ├── repository/                 # Spring Data JPA Repositories (AuthorRepository.java)
+│   │           ├── service/                    # Business logic layer (AuthorService.java)
+│   │           ├── bindings/                   # Data Transfer Objects (AuthorRegisterRequest.java, AuthorResponse.java)
+│   │           ├── dao/                        # DB Operations (if using custom DAO layer)
+│   │           └── AuthorManagementApplication.java   # Main Spring Boot Application
+│   ├── resources/
+│   │   ├── templates/                          # Thymeleaf HTML pages (author-form.html, authors.html)
+│   │   ├── static/
+│   │   │   ├── css/                            # Stylesheets
+│   │   │   ├── js/                             # JavaScript files
+│   │   │   └── images/                         # Images
+│   │   ├── application.properties              # Database configurations
+│   │   └── application.yml                     # Alternative configuration (optional)
+│   └── test/                                   # JUnit test cases
+├── pom.xml                                     # Maven dependencies and build file
+└── README.md                                   # Project documentation
 
-┣ 📂 src
-┃ ┣ 📂 main
-┃ ┃ ┣ 📂 java
-┃ ┃ ┃ ┗ 📂 com.library
-┃ ┃ ┃ ┃ ┣ 📂 controller
-┃ ┃ ┃ ┃ ┃ ┗ StudentController.java
-┃ ┃ ┃ ┃ ┃ ┗ BookController.java
-┃ ┃ ┃ ┃ ┃ ┗ IssueController.java
-┃ ┃ ┃ ┃ ┣ 📂 entity
-┃ ┃ ┃ ┃ ┃ ┗ Student.java
-┃ ┃ ┃ ┃ ┃ ┗ Book.java
-┃ ┃ ┃ ┃ ┃ ┗ Issue.java
-┃ ┃ ┃ ┃ ┣ 📂 repository
-┃ ┃ ┃ ┃ ┃ ┗ StudentRepository.java
-┃ ┃ ┃ ┃ ┃ ┗ BookRepository.java
-┃ ┃ ┃ ┃ ┃ ┗ IssueRepository.java
-┃ ┃ ┃ ┃ ┣ 📂 service
-┃ ┃ ┃ ┃ ┃ ┗ StudentService.java
-┃ ┃ ┃ ┃ ┃ ┗ BookService.java
-┃ ┃ ┃ ┃ ┃ ┗ IssueService.java
-┃ ┃ ┃ ┃ ┗ LibraryManagementSystemApplication.java
-┃ ┃ ┣ 📂 resources
-┃ ┃ ┃ ┣ 📂 static
-┃ ┃ ┃ ┃ ┣ 📂 css
-┃ ┃ ┃ ┃ ┣ 📂 js
-┃ ┃ ┃ ┣ 📂 templates
-┃ ┃ ┃ ┃ ┣ add-student.html
-┃ ┃ ┃ ┃ ┣ books.html
-┃ ┃ ┃ ┃ ┣ issue-book.html
-┃ ┃ ┃ ┃ ┣ return-book.html
-┃ ┃ ┃ ┣ application.properties
-┃ ┣ 📂 test
-┃ ┃ ┗ (JUnit test classes)
-┣ 📜 pom.xml
-┗ 📜 README.md
 
 
 
